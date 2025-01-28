@@ -48,10 +48,45 @@ body {
 
   --bg-primary: #ffffff;
   --bg-secondary: #fdfcfe;
+
+  --shadow-card: 0 0 10px rgba(0, 0, 0, 0.25);
+
+  --sidenav-width: 32rem;
+}
+
+// Add dark mode variables
+.dark {
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --text-gray: #8c8c8c;
+  --text-white: #000000;
+
+  --primay: #6a1b9a;
+  --primary-dark: #4a0072;
+  --primary-light: #8e24aa;
+  --primary-text: #ab47bc;
+  --primary-extra-light: #ab47bc33;
+
+  --primary-gradient-start: #7b1fa2;
+  --primary-gradient-end: #9c27b0;
+
+  --form-border: #4f4f4f;
+  --card-border: #3a3a3a;
+  --card-border-dark: #1a1a1a;
+
+  --bg-primary: #121212;
+  --bg-secondary: #1e1e1e;
+
+  --shadow-card: 0 0 10px rgba(255, 255, 255, 0.25);
 }
 
 .dashboard-container {
   display: flex;
+
+  .content {
+    width: calc(100% - var(--sidenav-width));
+    padding: 3rem 5rem;
+  }
 }
 
 @import './scss/_common.scss';
