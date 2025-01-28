@@ -78,6 +78,100 @@ body {
   padding: 3rem 5rem;
 }
 
+.dashboard-container .content .content-container {
+  margin-top: var(--card-gap);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: var(--card-gap);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dashboard-container .content .left-content {
+  width: 66.66%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: var(--card-gap);
+}
+
+.dashboard-container .content .left-content .welcome-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1rem;
+  border-radius: var(--radius-card);
+  -webkit-box-shadow: var(--shadow-card);
+          box-shadow: var(--shadow-card);
+}
+
+.dashboard-container .content .left-content .welcome-back .content {
+  width: 60%;
+  color: var(--text-white);
+}
+
+.dashboard-container .content .left-content .welcome-back .content h3 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.dashboard-container .content .left-content .welcome-back .content h5 {
+  font-size: 3.2rem;
+  font-weight: 300;
+}
+
+.dashboard-container .content .left-content .welcome-back img {
+  width: 40%;
+}
+
+.dashboard-container .content .left-content .welcome-back button {
+  margin-top: 2rem;
+  border: none;
+  outline: none;
+  background-color: var(--text-white);
+  color: black;
+  border-radius: var(--radius-full);
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.dashboard-container .content .left-content .welcome-back button i {
+  background-color: black;
+  color: white;
+  border-radius: var(--radius-full);
+  padding: 0.5rem 1.7rem;
+  margin-left: 1rem;
+}
+
+.dashboard-container .content .right-content {
+  width: 33.33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: var(--card-gap);
+}
+
 .nav-item {
   display: -webkit-box;
   display: -ms-flexbox;
