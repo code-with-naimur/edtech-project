@@ -70,7 +70,7 @@
       }
 
       .courses {
-        button {
+        .see-all-button {
           border: none;
           outline: none;
           background-color: transparent;
@@ -78,6 +78,94 @@
           font-size: 1.5rem;
           font-weight: 500;
           cursor: pointer;
+        }
+
+        .courses-card-container {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+
+          .courses-card {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            gap: 1rem;
+            border-radius: 1rem;
+            border: 1px solid var(--card-border-dark);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+            .courses-card-content {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              gap: 1rem;
+
+              img {
+                height: 100%;
+                width: auto;
+              }
+
+              .courses-card-text {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+
+                h4 {
+                  font-size: 2rem;
+                  font-weight: 500;
+                }
+
+                p {
+                  font-size: 1.4rem;
+                  font-weight: 300;
+                  color: var(--text-secondary);
+                }
+              }
+            }
+
+            button {
+              border: none;
+              outline: none;
+              background-color: black;
+              color: white;
+              padding: 1rem 0.5rem;
+              border-radius: 3px;
+              cursor: pointer;
+
+              i {
+                font-size: 2rem;
+              }
+            }
+          }
+        }
+      }
+
+      .statistics {
+        .statistics-card-container {
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+
+          .statistics-card {
+            width: 33.33%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: var(--text-white);
+            border-radius: 1.7rem;
+            padding: 2rem;
+
+            h3 {
+              font-size: 4rem;
+              font-weight: 600;
+            }
+
+            p {
+              font-size: 2rem;
+            }
+          }
         }
       }
     }
@@ -87,6 +175,148 @@
       display: flex;
       flex-direction: column;
       gap: var(--card-gap);
+
+      .my-profile {
+        .profile-icon-container {
+          display: flex;
+          flex-direction: row;
+          gap: 0.3rem;
+
+          i {
+            font-size: 1.4rem;
+            color: var(--text-primary);
+          }
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 2.3rem;
+        }
+
+        h3 {
+          text-align: center;
+          font-size: 3.5rem;
+          font-weight: 500;
+        }
+
+        p {
+          font-size: 1.6rem;
+          font-weight: 400;
+          text-align: center;
+        }
+
+        .profile-button-container {
+          margin-top: 1rem;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          gap: 3rem;
+
+          p {
+            font-size: 3rem;
+            font-weight: 500;
+          }
+
+          button {
+            border: 1px solid var(--card-border-dark);
+            outline: none;
+            background-color: transparent;
+            border-radius: var(--radius-full);
+            width: 4rem;
+            height: 4rem;
+            cursor: pointer;
+
+            i {
+              font-size: 1.6rem;
+            }
+          }
+        }
+
+        .calender-button-container {
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+          margin-top: 5rem;
+
+          .calender-button {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3rem;
+            padding: 1rem 0.5rem;
+
+            p {
+              font-size: 2rem;
+            }
+
+            h3 {
+              font-size: 3.2rem;
+            }
+          }
+
+          .active {
+            background-color: var(--primary);
+            color: var(--text-white);
+          }
+        }
+      }
+
+      .tokens {
+        .header {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          gap: 1rem;
+
+          img {
+            width: 10rem;
+          }
+
+          .tokens-text {
+            h3 {
+              font-size: 2rem;
+              font-weight: 500;
+            }
+
+            h2 {
+              font-size: 3rem;
+              font-weight: 500;
+            }
+          }
+        }
+
+        p {
+          text-wrap: balance;
+          text-align: center;
+          font-size: 1.6rem;
+          font-weight: 400;
+          color: var(--text-secondary);
+          margin-top: 2rem;
+        }
+
+        .button-container {
+          margin-top: 2rem;
+          display: flex;
+          justify-content: center;
+
+          button {
+            border: none;
+            outline: auto;
+            background-color: black;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 500;
+            padding: 1rem 3rem;
+            border-radius: var(--radius-full);
+            cursor: pointer;
+          }
+        }
+      }
     }
   }
 }

@@ -5,7 +5,7 @@
   --text-secondary: #7f7d7d;
   --text-gray: #aea9a9;
   --text-white: #ffffff;
-  --primay: #9638c5;
+  --primary: #9638c5;
   --primary-dark: #520895;
   --primary-light: #8930be;
   --primary-text: #a236a8;
@@ -269,6 +269,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 .card .card-header .card-title {
@@ -370,7 +371,7 @@ body {
   margin-left: 1rem;
 }
 
-.dashboard-container .content .left-content .courses button {
+.dashboard-container .content .left-content .courses .see-all-button {
   border: none;
   outline: none;
   background-color: transparent;
@@ -378,6 +379,131 @@ body {
   font-size: 1.5rem;
   font-weight: 500;
   cursor: pointer;
+}
+
+.dashboard-container .content .left-content .courses .courses-card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.dashboard-container .content .left-content .courses .courses-card-container .courses-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--card-border-dark);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-container .content .left-content .courses .courses-card-container .courses-card .courses-card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.dashboard-container .content .left-content .courses .courses-card-container .courses-card .courses-card-content img {
+  height: 100%;
+  width: auto;
+}
+
+.dashboard-container .content .left-content .courses .courses-card-container .courses-card .courses-card-content .courses-card-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dashboard-container .content .left-content .courses .courses-card-container .courses-card .courses-card-content .courses-card-text h4 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.dashboard-container .content .left-content .courses .courses-card-container .courses-card .courses-card-content .courses-card-text p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--text-secondary);
+}
+
+.dashboard-container .content .left-content .courses .courses-card-container .courses-card button {
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  padding: 1rem 0.5rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.dashboard-container .content .left-content .courses .courses-card-container .courses-card button i {
+  font-size: 2rem;
+}
+
+.dashboard-container .content .left-content .statistics .statistics-card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1rem;
+}
+
+.dashboard-container .content .left-content .statistics .statistics-card-container .statistics-card {
+  width: 33.33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--text-white);
+  border-radius: 1.7rem;
+  padding: 2rem;
+}
+
+.dashboard-container .content .left-content .statistics .statistics-card-container .statistics-card h3 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.dashboard-container .content .left-content .statistics .statistics-card-container .statistics-card p {
+  font-size: 2rem;
 }
 
 .dashboard-container .content .right-content {
@@ -390,5 +516,182 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: var(--card-gap);
+}
+
+.dashboard-container .content .right-content .my-profile .profile-icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.3rem;
+}
+
+.dashboard-container .content .right-content .my-profile .profile-icon-container i {
+  font-size: 1.4rem;
+  color: var(--text-primary);
+}
+
+.dashboard-container .content .right-content .my-profile img {
+  width: 100%;
+  height: auto;
+  border-radius: 2.3rem;
+}
+
+.dashboard-container .content .right-content .my-profile h3 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+.dashboard-container .content .right-content .my-profile p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.dashboard-container .content .right-content .my-profile .profile-button-container {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3rem;
+}
+
+.dashboard-container .content .right-content .my-profile .profile-button-container p {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.dashboard-container .content .right-content .my-profile .profile-button-container button {
+  border: 1px solid var(--card-border-dark);
+  outline: none;
+  background-color: transparent;
+  border-radius: var(--radius-full);
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+}
+
+.dashboard-container .content .right-content .my-profile .profile-button-container button i {
+  font-size: 1.6rem;
+}
+
+.dashboard-container .content .right-content .my-profile .calender-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+
+.dashboard-container .content .right-content .my-profile .calender-button-container .calender-button {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 3rem;
+  padding: 1rem 0.5rem;
+}
+
+.dashboard-container .content .right-content .my-profile .calender-button-container .calender-button p {
+  font-size: 2rem;
+}
+
+.dashboard-container .content .right-content .my-profile .calender-button-container .calender-button h3 {
+  font-size: 3.2rem;
+}
+
+.dashboard-container .content .right-content .my-profile .calender-button-container .active {
+  background-color: var(--primary);
+  color: var(--text-white);
+}
+
+.dashboard-container .content .right-content .tokens .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+.dashboard-container .content .right-content .tokens .header img {
+  width: 10rem;
+}
+
+.dashboard-container .content .right-content .tokens .header .tokens-text h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.dashboard-container .content .right-content .tokens .header .tokens-text h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.dashboard-container .content .right-content .tokens p {
+  text-wrap: balance;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  margin-top: 2rem;
+}
+
+.dashboard-container .content .right-content .tokens .button-container {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dashboard-container .content .right-content .tokens .button-container button {
+  border: none;
+  outline: auto;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 1rem 3rem;
+  border-radius: var(--radius-full);
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */
