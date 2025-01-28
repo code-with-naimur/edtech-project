@@ -1,0 +1,15 @@
+.gradient-top-to-bottom {
+  background: linear-gradient(
+    to bottom,
+    var(--primary-gradient-start),
+    var(--primary-gradient-end)
+  );
+}
+
+.gradient-left-to-right {
+  background: linear-gradient(
+    to right,
+    var(--primary-gradient-start),
+    var(--primary-gradient-end)
+  );
+}
