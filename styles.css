@@ -1,26 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-/* Reset */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  line-height: 1.7;
-}
-
-/* Now every value set in rem will be equivalent to 10px */
-html {
-  font-size: 62.5%;
-  color: var(--text-primary);
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: var(--bg-secondary);
-}
-
 /* Root variables */
 :root {
   --text-primary: #000000;
@@ -47,6 +25,7 @@ body {
   --sidenav-width: 32rem;
 }
 
+/* Dark mode variables */
 .dark {
   --text-primary: #ffffff;
   --text-secondary: #b3b3b3;
@@ -67,109 +46,26 @@ body {
   --shadow-card: 0 0 10px rgba(255, 255, 255, 0.25);
 }
 
-.dashboard-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.7;
 }
 
-.dashboard-container .content {
-  width: calc(100% - var(--sidenav-width));
-  padding: 3rem 5rem;
+/* Now every value set in rem will be equivalent to 10px */
+html {
+  font-size: 62.5%;
+  color: var(--text-primary);
 }
 
-.dashboard-container .content .content-container {
-  margin-top: var(--card-gap);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: var(--card-gap);
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.dashboard-container .content .left-content {
-  width: 66.66%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: var(--card-gap);
-}
-
-.dashboard-container .content .left-content .welcome-back {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 1rem;
-  border-radius: var(--radius-card);
-  -webkit-box-shadow: var(--shadow-card);
-          box-shadow: var(--shadow-card);
-}
-
-.dashboard-container .content .left-content .welcome-back .content {
-  width: 60%;
-  color: var(--text-white);
-}
-
-.dashboard-container .content .left-content .welcome-back .content h3 {
-  text-transform: uppercase;
-  font-size: 4rem;
-  font-weight: 500;
-}
-
-.dashboard-container .content .left-content .welcome-back .content h5 {
-  font-size: 3.2rem;
-  font-weight: 300;
-}
-
-.dashboard-container .content .left-content .welcome-back img {
-  width: 40%;
-}
-
-.dashboard-container .content .left-content .welcome-back button {
-  margin-top: 2rem;
-  border: none;
-  outline: none;
-  background-color: var(--text-white);
-  color: black;
-  border-radius: var(--radius-full);
-  padding: 1rem 2rem;
-  font-size: 2rem;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.dashboard-container .content .left-content .welcome-back button i {
-  background-color: black;
-  color: white;
-  border-radius: var(--radius-full);
-  padding: 0.5rem 1.7rem;
-  margin-left: 1rem;
-}
-
-.dashboard-container .content .right-content {
-  width: 33.33%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: var(--card-gap);
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-secondary);
 }
 
 .nav-item {
@@ -352,5 +248,147 @@ body {
 .gradient-left-to-right {
   background: -webkit-gradient(linear, left top, right top, from(var(--primary-gradient-start)), to(var(--primary-gradient-end)));
   background: linear-gradient(to right, var(--primary-gradient-start), var(--primary-gradient-end));
+}
+
+.card {
+  border-radius: var(--radius-card);
+  padding: 3rem 5rem;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--card-border);
+  -webkit-box-shadow: var(--shadow-card);
+          box-shadow: var(--shadow-card);
+}
+
+.card .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card .card-header .card-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.dashboard-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dashboard-container .content {
+  width: calc(100% - var(--sidenav-width));
+  padding: 3rem 5rem;
+}
+
+.dashboard-container .content .content-container {
+  margin-top: var(--card-gap);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: var(--card-gap);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dashboard-container .content .left-content {
+  width: 66.66%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: var(--card-gap);
+}
+
+.dashboard-container .content .left-content .welcome-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1rem;
+  border-radius: var(--radius-card);
+  -webkit-box-shadow: var(--shadow-card);
+          box-shadow: var(--shadow-card);
+}
+
+.dashboard-container .content .left-content .welcome-back .content {
+  width: 60%;
+  color: var(--text-white);
+}
+
+.dashboard-container .content .left-content .welcome-back .content h3 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.dashboard-container .content .left-content .welcome-back .content h5 {
+  font-size: 3.2rem;
+  font-weight: 300;
+}
+
+.dashboard-container .content .left-content .welcome-back img {
+  width: 40%;
+}
+
+.dashboard-container .content .left-content .welcome-back button {
+  margin-top: 2rem;
+  border: none;
+  outline: none;
+  background-color: var(--text-white);
+  color: black;
+  border-radius: var(--radius-full);
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.dashboard-container .content .left-content .welcome-back button i {
+  background-color: black;
+  color: white;
+  border-radius: var(--radius-full);
+  padding: 0.5rem 1.7rem;
+  margin-left: 1rem;
+}
+
+.dashboard-container .content .left-content .courses button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--primary-light);
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.dashboard-container .content .right-content {
+  width: 33.33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: var(--card-gap);
 }
 /*# sourceMappingURL=styles.css.map */
