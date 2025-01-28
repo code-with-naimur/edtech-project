@@ -2,8 +2,9 @@
   display: flex;
 
   .content {
-    width: calc(100% - var(--sidenav-width));
+    width: 100%;
     padding: 3rem 5rem;
+    padding-left: calc(var(--sidenav-width) + 5rem);
 
     .content-container {
       margin-top: var(--card-gap);
@@ -26,7 +27,8 @@
         border-radius: var(--radius-card);
         box-shadow: var(--shadow-card);
 
-        .content {
+        .welcome-back-content {
+          padding: 2rem 5rem;
           width: 60%;
           color: var(--text-white);
 

@@ -30,7 +30,7 @@
   --text-primary: #ffffff;
   --text-secondary: #b3b3b3;
   --text-gray: #8c8c8c;
-  --text-white: #000000;
+  --text-white: #ffffff;
   --primay: #6a1b9a;
   --primary-dark: #4a0072;
   --primary-light: #8e24aa;
@@ -93,6 +93,9 @@ body {
 }
 
 .sidenav {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: var(--sidenav-width);
   background-color: var(--bg-primary);
   border-top-right-radius: var(--radius-card);
@@ -284,8 +287,9 @@ body {
 }
 
 .dashboard-container .content {
-  width: calc(100% - var(--sidenav-width));
+  width: 100%;
   padding: 3rem 5rem;
+  padding-left: calc(var(--sidenav-width) + 5rem);
 }
 
 .dashboard-container .content .content-container {
@@ -329,18 +333,19 @@ body {
           box-shadow: var(--shadow-card);
 }
 
-.dashboard-container .content .left-content .welcome-back .content {
+.dashboard-container .content .left-content .welcome-back .welcome-back-content {
+  padding: 2rem 5rem;
   width: 60%;
   color: var(--text-white);
 }
 
-.dashboard-container .content .left-content .welcome-back .content h3 {
+.dashboard-container .content .left-content .welcome-back .welcome-back-content h3 {
   text-transform: uppercase;
   font-size: 4rem;
   font-weight: 500;
 }
 
-.dashboard-container .content .left-content .welcome-back .content h5 {
+.dashboard-container .content .left-content .welcome-back .welcome-back-content h5 {
   font-size: 3.2rem;
   font-weight: 300;
 }
