@@ -5,8 +5,16 @@
   justify-content: space-between;
   gap: var(--card-gap);
 
+  @include respond-to('xl') {
+    flex-direction: column;
+  }
+
   .left-content {
     width: 70%;
+
+    @include respond-to('xl') {
+      width: 100%;
+    }
 
     .left-card-header {
       display: flex;
@@ -20,7 +28,7 @@
 
       i {
         font-size: 3rem;
-        color: var(--primary-color);
+        color: var(--text-primary);
         cursor: pointer;
       }
     }
@@ -61,8 +69,14 @@
   }
 
   .right-content {
+    display: flex;
+    flex-direction: column !important;
     width: 30%;
     padding: 3rem 2rem;
+
+    @include respond-to('xl') {
+      width: 100%;
+    }
 
     .right-card-header {
       display: flex;
@@ -105,9 +119,26 @@
   gap: var(--card-gap);
   margin-top: var(--card-gap);
 
+  @include respond-to('lg') {
+    flex-wrap: wrap;
+  }
+
+  @include respond-to('md') {
+    flex-direction: column;
+  }
+
   .learning-card {
     width: 33.33%;
+
     padding: 2rem;
+
+    @include respond-to('lg') {
+      width: calc(50% - var(--card-gap));
+    }
+
+    @include respond-to('md') {
+      width: 100%;
+    }
 
     img {
       width: 100%;
