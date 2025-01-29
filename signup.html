@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Sign Up</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
@@ -24,22 +24,26 @@
         <h5>Learn, Branch, Evolve.</h5>
 
         <div class="tab-container">
-          <button class="tab-button active">
+          <button class="tab-button">
             <a href="login.html">Login</a>
           </button>
-          <button class="tab-button">
+          <button class="tab-button active">
             <a href="signup.html">Sign Up</a>
           </button>
         </div>
 
         <form>
+          <input type="text" placeholder="Name" name="name" />
           <input type="email" placeholder="Email" name="email" />
           <input type="password" placeholder="Password" name="password" />
-          <p class="forgot-password">Forgot Password?</p>
-          <button type="submit" class="submit-button">Login</button>
+          <button type="submit" class="submit-button">Signup</button>
+          <button class="o-auth-button" type="button">
+            <img src="./assets/images/auth/google-icon.png" alt="google" />
+            Continue with Google
+          </button>
 
           <div class="form-bottom-nav">
-            <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+            <p>Already have an account? <a href="login.html">Login</a></p>
           </div>
         </form>
       </div>
