@@ -22,7 +22,7 @@
   --bg-primary: #ffffff;
   --bg-secondary: #fdfcfe;
   --bg-input: #f7f6f4;
-  --shadow-card: 0 0 10px rgba(0, 0, 0, 0.25);
+  --shadow-card: 0 0 10px rgba(0, 0, 0, 0.15);
   --sidenav-width: 32rem;
 }
 
@@ -45,7 +45,7 @@
   --bg-primary: #121212;
   --bg-secondary: #1e1e1e;
   --bg-input: #2a2a2a;
-  --shadow-card: 0 0 10px rgba(255, 255, 255, 0.25);
+  --shadow-card: 0 0 10px rgba(255, 255, 255, 0.15);
 }
 
 /* Reset */
@@ -82,6 +82,7 @@ i {
 }
 
 .nav-item {
+  padding: 1.2rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,6 +103,8 @@ i {
 }
 
 .nav-item:hover {
+  cursor: pointer;
+  border-radius: var(--radius-full);
   background-color: var(--primary-extra-light);
 }
 
@@ -155,7 +158,6 @@ i {
 }
 
 .sidenav .nav-items {
-  padding-left: 2.5rem;
   margin-top: 3.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -164,7 +166,6 @@ i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 3.2rem;
 }
 
 .sidenav .friend-button {
@@ -405,18 +406,19 @@ i {
 .dashboard-container .content .left-content .welcome-back .welcome-back-content {
   padding: 2rem 5rem;
   width: 60%;
-  color: var(--text-white);
 }
 
 .dashboard-container .content .left-content .welcome-back .welcome-back-content h3 {
   text-transform: uppercase;
   font-size: 4rem;
   font-weight: 500;
+  color: var(--text-white);
 }
 
 .dashboard-container .content .left-content .welcome-back .welcome-back-content h5 {
   font-size: 3.2rem;
   font-weight: 300;
+  color: var(--text-white);
 }
 
 .dashboard-container .content .left-content .welcome-back img {
@@ -541,6 +543,7 @@ i {
 
 .dashboard-container .content .left-content .courses .courses-card-container .courses-card button i {
   font-size: 2rem;
+  color: var(--text-white);
 }
 
 .dashboard-container .content .left-content .statistics .statistics-card-container {
@@ -566,7 +569,6 @@ i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: var(--text-white);
   border-radius: 1.7rem;
   padding: 2rem;
 }
@@ -574,10 +576,12 @@ i {
 .dashboard-container .content .left-content .statistics .statistics-card-container .statistics-card h3 {
   font-size: 4rem;
   font-weight: 600;
+  color: var(--text-white);
 }
 
 .dashboard-container .content .left-content .statistics .statistics-card-container .statistics-card p {
   font-size: 2rem;
+  color: var(--text-white);
 }
 
 .dashboard-container .content .right-content {
