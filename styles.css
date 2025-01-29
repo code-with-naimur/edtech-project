@@ -68,6 +68,17 @@ body {
   background-color: var(--bg-secondary);
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i {
+  color: var(--text-primary);
+}
+
 .nav-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -698,5 +709,89 @@ body {
   padding: 1rem 3rem;
   border-radius: var(--radius-full);
   cursor: pointer;
+}
+
+.learning-space-container {
+  margin-top: var(--card-gap);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: var(--card-gap);
+}
+
+.learning-space-container .left-content {
+  width: 70%;
+}
+
+.learning-space-container .left-content .left-card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.learning-space-container .left-content .left-card-header h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.learning-space-container .left-content .left-card-header i {
+  font-size: 3rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.learning-space-container .left-content .left-card-content p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.learning-space-container .left-content .left-card-footer {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.learning-space-container .left-content .left-card-footer .continue-button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  border-radius: var(--radius-full);
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+
+.learning-space-container .left-content .left-card-footer .next-button {
+  background-color: var(--card-border);
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.learning-space-container .right-content {
+  width: 30%;
 }
 /*# sourceMappingURL=styles.css.map */
