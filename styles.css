@@ -905,6 +905,7 @@ i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -917,6 +918,24 @@ i {
           justify-content: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#8930be), to(#520895));
   background-image: linear-gradient(to bottom, #8930be, #520895);
+}
+
+.auth-container .left-image {
+  position: absolute;
+  bottom: 5rem;
+  left: 5rem;
+  max-width: 50rem;
+  width: 100%;
+  height: auto;
+}
+
+.auth-container .right-image {
+  position: absolute;
+  bottom: 5rem;
+  right: 5rem;
+  max-width: 40rem;
+  width: 100%;
+  height: auto;
 }
 
 .auth-container .auth-card {

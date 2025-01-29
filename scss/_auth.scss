@@ -2,10 +2,29 @@
   width: 100%;
   min-height: 100vh;
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(to bottom, #8930be, #520895);
+
+  .left-image {
+    position: absolute;
+    bottom: 5rem;
+    left: 5rem;
+    max-width: 50rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .right-image {
+    position: absolute;
+    bottom: 5rem;
+    right: 5rem;
+    max-width: 40rem;
+    width: 100%;
+    height: auto;
+  }
 
   .auth-card {
     padding: 2rem 8rem;
