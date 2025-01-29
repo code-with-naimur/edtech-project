@@ -21,6 +21,7 @@
   --radius-full: 999rem;
   --bg-primary: #ffffff;
   --bg-secondary: #fdfcfe;
+  --bg-input: #f7f6f4;
   --shadow-card: 0 0 10px rgba(0, 0, 0, 0.25);
   --sidenav-width: 32rem;
 }
@@ -896,5 +897,182 @@ i {
   cursor: pointer;
   font-size: 2rem;
   color: var(--card-border-dark);
+}
+
+.auth-container {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#8930be), to(#520895));
+  background-image: linear-gradient(to bottom, #8930be, #520895);
+}
+
+.auth-container .auth-card {
+  padding: 2rem 8rem;
+}
+
+.auth-container .auth-card h3,
+.auth-container .auth-card h5 {
+  line-height: 1.2;
+}
+
+.auth-container .auth-card h3 {
+  font-size: 4.8rem;
+  font-weight: 500;
+}
+
+.auth-container .auth-card h5 {
+  font-size: 3.2rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.auth-container .auth-card .tab-container {
+  margin: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid var(--text-primary);
+  border-radius: var(--radius-form);
+  background-color: var(--bg-primary);
+}
+
+.auth-container .auth-card .tab-container .tab-button {
+  cursor: pointer;
+  border: none;
+  width: 50%;
+  padding: 1rem 2rem;
+  border-radius: var(--radius-form);
+  font-size: 2rem;
+}
+
+.auth-container .auth-card .tab-container .tab-button a {
+  text-decoration: none;
+}
+
+.auth-container .auth-card .tab-container .tab-button.active {
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--primary-gradient-start)), to(var(--primary-gradient-end)));
+  background-image: linear-gradient(90deg, var(--primary-gradient-start), var(--primary-gradient-end));
+  color: var(--text-white);
+}
+
+.auth-container .auth-card .tab-container .tab-button.active a {
+  color: var(--text-white);
+}
+
+.auth-container .auth-card .tab-container .tab-button:not(.active) {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.auth-container .auth-card .tab-container .tab-button:not(.active) a {
+  color: var(--text-primary);
+}
+
+.auth-container .auth-card form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+
+.auth-container .auth-card form input {
+  padding: 1.3rem 2rem;
+  border-radius: var(--radius-form);
+  border: 1px solid var(--form-border);
+  background-color: var(--bg-input);
+  font-size: 1.6rem;
+}
+
+.auth-container .auth-card form input ::-webkit-input-placeholder {
+  color: var(--text-gray);
+}
+
+.auth-container .auth-card form input :-ms-input-placeholder {
+  color: var(--text-gray);
+}
+
+.auth-container .auth-card form input ::-ms-input-placeholder {
+  color: var(--text-gray);
+}
+
+.auth-container .auth-card form input ::placeholder {
+  color: var(--text-gray);
+}
+
+.auth-container .auth-card form .submit-button {
+  padding: 1rem 2rem;
+  border-radius: var(--radius-form);
+  border: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--primary-gradient-start)), to(var(--primary-gradient-end)));
+  background-image: linear-gradient(90deg, var(--primary-gradient-start), var(--primary-gradient-end));
+  color: var(--text-white);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.auth-container .auth-card form .forgot-password {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  text-align: right;
+  cursor: pointer;
+}
+
+.auth-container .auth-card form .form-bottom-nav {
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.auth-container .auth-card form .form-bottom-nav p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.auth-container .auth-card form .form-bottom-nav a {
+  color: var(--text-primary);
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.auth-container .auth-card form .o-auth-button {
+  padding: 1.3rem 2rem;
+  border-radius: var(--radius-form);
+  border: 1px solid var(--form-border);
+  background-color: var(--bg-input);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.auth-container .auth-card form .o-auth-button img {
+  width: 7rem;
+  height: auto;
 }
 /*# sourceMappingURL=styles.css.map */
