@@ -793,5 +793,43 @@ i {
 
 .learning-space-container .right-content {
   width: 30%;
+  padding: 3rem 2rem;
+}
+
+.learning-space-container .right-content .right-card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.learning-space-container .right-content .right-card-header img {
+  max-width: 7rem;
+  height: auto;
+}
+
+.learning-space-container .right-content .right-card-header h3 {
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+
+.learning-space-container .right-content .right-card-content p {
+  font-size: 2rem;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--card-border);
+  padding: 1rem 0 1rem 2rem;
+  cursor: pointer;
+}
+
+.learning-space-container .right-content .right-card-content p:first-child {
+  padding-top: 0;
 }
 /*# sourceMappingURL=styles.css.map */
