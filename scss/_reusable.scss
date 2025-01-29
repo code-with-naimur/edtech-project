@@ -33,3 +33,50 @@
     }
   }
 }
+
+.theme-switch {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 10rem;
+  height: 5rem;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-card);
+  position: relative;
+  cursor: pointer;
+
+  .theme-switch-pointer {
+    width: 4rem;
+    height: 4rem;
+
+    border-radius: var(--radius-full);
+    position: absolute;
+    top: 0.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .light {
+    left: 0.5rem;
+  }
+
+  .dark {
+    right: 0.5rem;
+  }
+}
+
+.auth-version {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--card-border);
+
+  .theme-switch-pointer {
+    background-color: var(--primary);
+  }
+}
+
+.dashboard-version {
+  background-color: var(--primary);
+
+  .theme-switch-pointer {
+    background-color: var(--bg-primary);
+  }
+}

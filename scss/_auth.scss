@@ -101,6 +101,7 @@
         border: 1px solid var(--form-border);
         background-color: var(--bg-input);
         font-size: 1.6rem;
+        color: var(--text-primary);
 
         ::placeholder {
           color: var(--text-gray);
@@ -108,6 +109,7 @@
       }
 
       .submit-button {
+        cursor: pointer;
         padding: 1rem 2rem;
         border-radius: var(--radius-form);
         border: none;
@@ -170,4 +172,10 @@
       }
     }
   }
+}
+
+.auth-theme-switch {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
 }

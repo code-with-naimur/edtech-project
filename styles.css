@@ -30,7 +30,7 @@
 .dark {
   --text-primary: #ffffff;
   --text-secondary: #b3b3b3;
-  --text-gray: #8c8c8c;
+  --text-gray: #b1b1b1;
   --text-white: #ffffff;
   --primay: #6a1b9a;
   --primary-dark: #4a0072;
@@ -44,6 +44,7 @@
   --card-border-dark: #1a1a1a;
   --bg-primary: #121212;
   --bg-secondary: #1e1e1e;
+  --bg-input: #2a2a2a;
   --shadow-card: 0 0 10px rgba(255, 255, 255, 0.25);
 }
 
@@ -294,6 +295,58 @@ i {
 .card .card-header .card-title {
   font-size: 2.4rem;
   font-weight: 600;
+}
+
+.theme-switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  width: 10rem;
+  height: 5rem;
+  border-radius: var(--radius-full);
+  -webkit-box-shadow: var(--shadow-card);
+          box-shadow: var(--shadow-card);
+  position: relative;
+  cursor: pointer;
+}
+
+.theme-switch .theme-switch-pointer {
+  width: 4rem;
+  height: 4rem;
+  border-radius: var(--radius-full);
+  position: absolute;
+  top: 0.5rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.theme-switch .light {
+  left: 0.5rem;
+}
+
+.theme-switch .dark {
+  right: 0.5rem;
+}
+
+.auth-version {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--card-border);
+}
+
+.auth-version .theme-switch-pointer {
+  background-color: var(--primary);
+}
+
+.dashboard-version {
+  background-color: var(--primary);
+}
+
+.dashboard-version .theme-switch-pointer {
+  background-color: var(--bg-primary);
 }
 
 .dashboard-container {
@@ -1019,6 +1072,7 @@ i {
   border: 1px solid var(--form-border);
   background-color: var(--bg-input);
   font-size: 1.6rem;
+  color: var(--text-primary);
 }
 
 .auth-container .auth-card form input ::-webkit-input-placeholder {
@@ -1038,6 +1092,7 @@ i {
 }
 
 .auth-container .auth-card form .submit-button {
+  cursor: pointer;
   padding: 1rem 2rem;
   border-radius: var(--radius-form);
   border: none;
@@ -1106,5 +1161,11 @@ i {
 .auth-container .auth-card form .o-auth-button img {
   width: 4rem;
   height: auto;
+}
+
+.auth-theme-switch {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
 }
 /*# sourceMappingURL=styles.css.map */
