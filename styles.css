@@ -41,11 +41,10 @@
   --primary-gradient-end: #9c27b0;
   --form-border: #4f4f4f;
   --card-border: #3a3a3a;
-  --card-border-dark: #1a1a1a;
-  --bg-primary: #121212;
-  --bg-secondary: #1e1e1e;
+  --card-border-dark: #9c9c9c;
+  --bg-primary: #474747;
+  --bg-secondary: #2e2e2e;
   --bg-input: #2a2a2a;
-  --shadow-card: 0 0 10px rgba(255, 255, 255, 0.15);
 }
 
 /* Reset */
@@ -146,6 +145,11 @@ i {
   font-size: 7.2rem;
 }
 
+.sidenav .sidenav-header i {
+  font-size: 3.2rem;
+  color: var(--text-primary);
+}
+
 .sidenav .dashboard-button {
   background-color: var(--primary-extra-light);
   color: var(--primary-text);
@@ -214,7 +218,7 @@ i {
   border: 1px solid var(--form-border);
   border-radius: var(--radius-full);
   padding: 1.2rem 2rem;
-  background-color: #f9f8f8;
+  background-color: var(--bg-input);
   width: 100%;
   outline: none;
   padding-left: 7rem;
@@ -227,6 +231,7 @@ i {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  font-size: 2rem;
 }
 
 .topnav .bell-icon-container {
@@ -347,7 +352,7 @@ i {
 }
 
 .dashboard-version .theme-switch-pointer {
-  background-color: var(--bg-primary);
+  background-color: var(--text-white);
 }
 
 .dashboard-container {

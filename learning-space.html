@@ -17,25 +17,7 @@
         <nav class="sidenav">
           <div class="sidenav-header">
             <h1 class="logo gradient-top-to-bottom">H</h1>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-logout-2"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path
-                d="M10 8v-2a2 2 0 0 1 2 -2h7a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-2"
-              />
-              <path d="M15 12h-12l3 -3" />
-              <path d="M6 15l-3 -3" />
-            </svg>
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
           </div>
 
           <div class="dashboard-button nav-item">
@@ -89,24 +71,16 @@
                 placeholder="Search....."
                 class="search-input"
               />
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="37"
-                height="37"
-                viewBox="0 0 37 37"
-                fill="none"
-                class="search-icon"
-              >
-                <path
-                  d="M23.8959 21.5834H22.6779L22.2463 21.1671C23.2097 20.0478 23.9139 18.7294 24.3083 17.3062C24.7028 15.883 24.7778 14.3902 24.5279 12.9346C23.8034 8.64877 20.2267 5.22627 15.91 4.70211C14.3924 4.51012 12.851 4.66784 11.4038 5.1632C9.95651 5.65857 8.64175 6.47844 7.5601 7.5601C6.47844 8.64175 5.65857 9.95651 5.1632 11.4038C4.66784 12.851 4.51012 14.3924 4.70211 15.91C5.22627 20.2267 8.64877 23.8034 12.9346 24.5279C14.3902 24.7778 15.883 24.7028 17.3062 24.3083C18.7294 23.9139 20.0478 23.2097 21.1671 22.2463L21.5834 22.6779V23.8959L28.1354 30.4479C28.7675 31.08 29.8004 31.08 30.4325 30.4479C31.0646 29.8159 31.0646 28.7829 30.4325 28.1509L23.8959 21.5834ZM14.6459 21.5834C10.8071 21.5834 7.70836 18.4846 7.70836 14.6459C7.70836 10.8071 10.8071 7.70836 14.6459 7.70836C18.4846 7.70836 21.5834 10.8071 21.5834 14.6459C21.5834 18.4846 18.4846 21.5834 14.6459 21.5834Z"
-                  fill="black"
-                />
-              </svg>
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
             </div>
 
             <div class="bell-icon-container">
               <i class="fa-solid fa-bell"></i>
               <div class="bell-dot"></div>
+            </div>
+
+            <div class="theme-switch dashboard-version" onclick="toggleMode()">
+              <div class="theme-switch-pointer light"></div>
             </div>
           </div>
 

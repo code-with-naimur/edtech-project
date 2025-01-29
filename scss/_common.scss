@@ -49,6 +49,11 @@
     img {
       font-size: 7.2rem;
     }
+
+    i {
+      font-size: 3.2rem;
+      color: var(--text-primary);
+    }
   }
 
   .dashboard-button {
@@ -106,7 +111,7 @@
       border: 1px solid var(--form-border);
       border-radius: var(--radius-full);
       padding: 1.2rem 2rem;
-      background-color: #f9f8f8;
+      background-color: var(--bg-input);
       width: 100%;
       outline: none;
       padding-left: 7rem;
@@ -118,6 +123,7 @@
       left: 2rem;
       top: 50%;
       transform: translateY(-50%);
+      font-size: 2rem;
     }
   }
 
