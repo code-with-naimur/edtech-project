@@ -1,0 +1,20 @@
+// Mixin for media queries
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == 'sm' {
+    @media (min-width: 601px) {
+      @content;
+    }
+  } @else if $breakpoint == 'md' {
+    @media (min-width: 769px) {
+      @content;
+    }
+  } @else if $breakpoint == 'lg' {
+    @media (min-width: 1025px) {
+      @content;
+    }
+  } @else if $breakpoint == 'xl' {
+    @media (min-width: 1201px) {
+      @content;
+    }
+  }
+}

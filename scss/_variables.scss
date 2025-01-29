@@ -30,9 +30,14 @@
   --shadow-card: 0 0 10px rgba(0, 0, 0, 0.15);
 
   --sidenav-width: 32rem;
+
+  @include respond-to('xxl') {
+    --card-gap: 2rem;
+  }
 }
 
 /* Dark mode variables */
+
 .dark {
   --text-primary: #ffffff;
   --text-secondary: #b3b3b3;

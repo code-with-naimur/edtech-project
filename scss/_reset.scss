@@ -12,6 +12,10 @@
 html {
   font-size: 62.5%;
   color: var(--text-primary);
+
+  @include respond-to('xxl') {
+    font-size: 50%;
+  }
 }
 
 body {
